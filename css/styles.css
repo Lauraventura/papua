@@ -1,0 +1,628 @@
+
+html{
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Quattrocento', serif;
+    /*font-family: 'Libre Baskerville', serif;
+    font-family: 'Roboto', sans-serif;*/
+
+    width: 100%;
+    height: 100%;
+    color: #3F3F3F;
+    line-height: 1.6;
+    font-size: 17px;
+
+    /*iman scroll*/
+    
+    /* scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow: auto;  
+    scroll-snap-type: y mandatory; 
+    -ms-scroll-snap-type: mandatory; 
+    -webkit-scroll-snap-type: mandatory; 
+    -webkit-scroll-snap-destination: 0% 0%;  
+    -webkit-overflow-scrolling: touch; 
+    scroll-snap-points-x: initial;
+    -ms-scroll-snap-points-x: initial;
+    scroll-snap-points-y: repeat(100%);
+    -ms-scroll-snap-points-y: repeat(100%); */
+    
+
+}
+
+/* nav */
+
+.menu{
+    position: fixed;
+    z-index: 2;
+}
+
+.menu_projecte{
+    position: fixed;
+    z-index: 2;
+    bottom: 60px;
+    left: 20px;  
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.menu.lv_nom_about{
+    font-size: 13px;
+}
+
+
+.menu_projecte>li:hover{
+    text-decoration-line: underline;
+}
+
+.menu_projecte>li.active{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+a{
+    color: #3F3F3F;
+    text-decoration: none;
+}
+
+a:visited { 
+    color: #3F3F3F;
+}
+
+
+
+.activat{
+    text-decoration-line: underline;
+    background: #0D4AFB;
+}
+
+
+.lv_nom{
+    top: 20px;
+    left: 20px;
+}
+
+
+.lv_nom_about{
+    top: 45px;
+    left: 20px;
+    font-size: 13px;
+}
+
+.top_dr{
+    top: 20px;
+    right: 20px;
+}
+
+.bottom_left{
+    BOTTOM:20px;
+    left: 20px;
+}
+
+#bottom_dr{
+    transform: rotate(-90deg);
+    bottom: 80px;
+    right: -35px;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.bottom_dr-hidden{
+    transition: all 1s ease-in-out;
+    opacity: 0 !important;
+    /*right: -70px !important;*/
+}
+
+
+#links{
+    height: 20vh;
+}
+
+
+/* seccions */
+
+.seccio{
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    align-items: stretch;
+
+    /*iman scroll ACTIVAR QUAN TINGUI SUPORT*/
+    flex-shrink: 0;  
+    scroll-snap-align: start; 
+    /*scroll-snap-coordinate: 0% 0%; /* older (Firefox/IE) */  
+    -webkit-scroll-snap-coordinate: 0% 0%; /* older (Safari) */ 
+}
+
+
+.bloc{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1;
+    /*width:960px;*/
+}
+
+.next{
+    display: none;
+    padding: 20px;
+    /* transform: rotate(90deg); */
+    position: absolute;
+    bottom: 1%;
+}
+
+
+
+/* imatges */
+
+.bloc.imatge.home_hola{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/home_hola.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.img_portada.rebost{
+    width:100%;
+    height: 98vh;
+    background-image: url(../img/rebost_plantes.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.img_portada.mimu{
+    width:100%;
+    height: 98vh;
+    background-image: url(../img/mimuportada.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.img_portada.jiminy{
+    width:100%;
+    height: 98vh;
+    background-image: url(../img/jiminy.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.img_portada.crisi{
+    width:100%;
+    height: 98vh;
+    background-image: url(../img/crisi_cover.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.imatge{
+    width: 80%;
+}
+
+.imatge.waving{
+    width: 70%;
+}
+
+.bloc.imatge.jiminy{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/recaditos.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.rebost{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/rebost.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.bloc.imatge.rebost2{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/portada_rebost.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.rebost_fruites{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/rebost_fruites.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.rebost_objectes{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/rebost_objectes.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.rebost_flors{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/rebost_flors.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.rebost_tipo{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/rebost_tipo.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.rebost_llimona{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/rebost_llimona.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.rebost_layout{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/rebost_layout.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.jiminy_remember{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/about_jiminy.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.mimu{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/mimuportada.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.mimu_home{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/mimu_home.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.mimu_persona{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/personamimu.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.papua{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/papuarombo.gif);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.crisi{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/crisi.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.crisi_home{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/crisi_home.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.crisi_referent{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/crisi_referent.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.crisi_colours{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/crisi_colours.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.crisi_tote{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/crisi_tote.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.crisi_gif{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/newsletter.gif);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.crisi_docs{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/crisi_docs.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.callme{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/contact.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.bloc.imatge.melvida_home{
+    height: 100%;
+    position: relative;
+    background-image: url(../img/melvida_upcoming.png);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+
+/* textos */
+
+h2{
+    font-weight: bold;
+}
+
+.text.paragraf{
+    padding: 20%;
+}
+
+.text.about{
+    padding: 20% 20% 20% 20%;
+}
+
+.boto{
+    background-color: transparent;
+    border-color: #3F3F3F;
+    border-radius: 20px;
+    height: 40px;
+    width: 60%;
+    font-size: inherit;
+    font-family: 'Quattrocento', serif;
+    color: #3F3F3F;
+    
+}
+
+.boto.hovergroc:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+}
+
+.boto.hoververmell:hover {
+    color: #ffffff !important;
+    background: #F78079;
+    border-color: #F78079 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.boto.hoverlila:hover {
+    color: #ffffff !important;
+    background: #827fe8;
+    border-color: #827fe8 !important;
+    transition: all 0.4s ease 0s;
+}
+
+.boto.hoverblau:hover {
+    color: #ffffff !important;
+    background: #0D4AFB;
+    border-color: #0D4AFB !important;
+    transition: all 0.4s ease 0s;
+}
+
+.boto.hovergris:hover {
+    color: #ffffff !important;
+    background: rgb(53, 53, 53);
+    border-color: rgb(53, 53, 53) !important;
+    transition: all 0.4s ease 0s;
+}
+
+/* .fa .fab{
+    margin-right: 40px; 
+}  */
+
+/* colors */
+.blau{background-color: #2A74FF;}
+.blauabout{background-color: #30EFEC;}
+.gris{background-color: #F9F9F9;}
+.blauclar{background-color: rgb(189, 205, 255);}
+.blausuperclar{background-color: rgb(230, 246, 255);}
+.blaugriset{background-color: #F9F9F9;}
+.blaujourney{background-color: #699DFF;}
+.blaumvp{background-color: #CADCFF;}
+.blauflow{background-color: #F8FAFF;}
+.blaugrisfosc{background-color: #607191;}
+.blanc{background-color: #FFFFFF;} 
+.fons_mindmap{background-color: #FBFBFB;}
+.turquesa{background-color: #8ADEBF;} 
+.turquesa2{background-color: #8BFFD7;}
+.vermell{background-color: #F78079;}
+.vermellclar{background-color: rgb(255, 231, 230);}
+.vermelltaronja{background-color: #FFE1D3;/*background-color: #FF5000;*/}
+.vermelltaronjafosc{background-color: rgb(248, 144, 99);}
+.carn{background-color: rgb(252, 241, 236);}
+.groc{background-color: #FFD561;}
+.groclar{background-color: #FFF9E9;}
+.grocpersonamimu{background-color: #FFF6AE;}
+.grocllimona{background-color: #FFE974;}
+.taronja{background-color: #FFC677;}
+.lila{background-color: #095AF5;}
+.lilapapua{background-color: #776EFF}
+.lilaclar{background-color: rgb(255, 254, 200);}
+.negre{background-color: #3A3A3A;}
+
+.fonsgris1{background-color: #FAFAFA;}
+.fonsgris2{background-color: #F6F6F6;}
+
+
+
+
+
+
+
+/*@media (max-width: 768px) {*/
+@media (max-width: 768px) {
+
+    body{
+        font-size: 11px;
+    }
+    
+    .seccio {
+        display: flex;
+        flex-direction: column-reverse;  
+        height: 100vh;
+    }
+
+    .img_portada.mimu{
+        background-image: url(../img/mimuportada_responsive.png);
+    }
+
+    .menu_projecte{
+        display: none;
+    }
+
+    .menu.lv_nom_about{
+        font-size: 10px;
+    }
+    
+    #bottom_dr{
+        display: none;
+    }
+
+    .bloc{
+        height: 50vh;
+        position: relative;
+    }
+    
+    .next{
+        display: block;
+        padding: 20px;
+        /* transform: rotate(90deg); */
+        position: absolute;
+        bottom: 1%;
+    }
+
+
+    .bloc.imatge{
+        order: 1;
+        width: 100%;
+    }
+
+    /*
+    .bloc.foto{
+        order: 1;
+    }
+
+    .imatge{
+        max-width: 45vh;
+    }
+      
+    */
+
+    #bottom_dr{
+        display: none;
+    }
+
+    .text.paragraf{
+        padding: 10%;
+    }
+
+
+
+}
+
+/* ASPECT RATIO IMG UTILS */
+
+[class*='ratio-'] {
+    display: block;
+    position: relative;
+}
+
+[class*='ratio-'] > * {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    object-fit: cover;
+}
+
+.aspect-ratio-wide {
+    padding-top: 56.25%;
+}
+
+.aspect-ratio-square {
+    padding-top: 100%;
+}
